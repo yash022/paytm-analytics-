@@ -1,0 +1,15 @@
+{
+  "name": "payment-analytics",
+  "private": true,
+  "version": "0.3.0",
+  "description": "PayAnalytics monorepo — React frontend + FastAPI MongoDB backend",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "cd backend && .venv/bin/uvicorn app.main:app --reload --port 8020",
+    "build": "npm run build --prefix frontend",
+    "seed": "cd backend && .venv/bin/python -m app.db.seed",
+    "install:frontend": "npm install --prefix frontend",
+    "install:backend": "cd backend && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt"
+  }
+}
