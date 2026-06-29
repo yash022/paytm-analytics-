@@ -1,0 +1,22 @@
+# MongoDB data plane
+fastapi>=0.110
+uvicorn[standard]>=0.27
+motor>=3.3
+pymongo>=4.6
+python-multipart>=0.0.9
+
+# LangGraph + LLM (Ollama local / Gemini cloud)
+langgraph>=0.2
+langchain-core>=0.3
+langchain-ollama>=0.2
+pydantic-settings>=2.0
+python-dotenv>=1.0
+
+# Auth + caching
+python-jose[cryptography]>=3.3
+bcrypt>=4.0
+redis>=5.0
+email-validator>=2.0
+
+# Optional: Gemini
+# langchain-google-genai>=2.0
